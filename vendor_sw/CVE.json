@@ -7,6 +7,7 @@
                         {
                             "lang": "en",
                             "cweId": "CWE",
+                            "cweId2": "CWE",
                             "type": "CWE"
                         }
                     ]
