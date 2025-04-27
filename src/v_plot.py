@@ -24,7 +24,7 @@ sns.set_theme(style="whitegrid")
 #sns.boxplot(data=dataset, x='year', y='base', hue='type')
 #sns.boxenplot(data=dataset, x='year', y='base', hue='type')
 
-sns.stripplot(data=dataset, x='year', y='base', hue='type', hue_order=['CVE', 'vendor'], dodge=True, jitter=True)
+sns.stripplot(data=dataset, x='year', y='base', hue='type', palette={'CVE': '#A0522D', 'vendor': '#FFD700'}, hue_order=['CVE', 'vendor'], dodge=True, jitter=True)
 #sns.swarmplot(data=dataset, x='year', y='base', hue='type')
 
 
@@ -38,7 +38,7 @@ sns.stripplot(data=dataset, x='year', y='base', hue='type', hue_order=['CVE', 'v
 plt.legend(title='')
 plt.xlabel('')
 plt.ylabel('Base Score')
-plt.title('Firmware vulnerability distribution')
+plt.title('Firmware update vulnerability distribution')
 plt.legend(loc='lower center')
 
 
